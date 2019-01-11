@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: grid;
+    grid-template-columns: 23% 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    grid-template-areas: "menu video video"
+                         "menu description description"
+                         "menu comments suggestions";
+    height: 100%; 
+}
+
+.menu {
+    grid-area: menu;
+    background: #16182b;
+    color: white;
+    padding: 25px 20px;
+}
+.menu-title h1, .menu-title span{
+    font-weight: 500;
+    font-size: 36px;
+}
+.menu-title span {
+    color: #db1178;
+}
+.menu-playlist ol { 
+    padding-left: 18px;
+}
+body > div > section.menu > div.menu-playlist > p { /*selector del titulo de la playlist*/
+    margin-left: 0;
+}
+.menu-playlist p {
+    margin: 20px 0;
+    margin-left: 20px;
+}
+.menu-playlist span {
+    margin-right: 25px;
+}
+.menu-friendsPlaylist p {
+    margin-top: 32px;
+}
+.friends {
+    list-style: none;
+    padding: 0;
+}
+.friends li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.friends p {
+    margin: 0;
+    margin-left: 15px;
+}
+figure {
+    margin: 0;
+}
+.profile-photo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.video {
+    /* grid-area: video; */
+}
+
+.description {
+    /* grid-area: description; */
+}
+
+.comments {
+    /* grid-area: comments; */
+}
+
+.suggestions {
+    /* grid-area: suggestions; */
+}
