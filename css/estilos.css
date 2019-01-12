@@ -5,7 +5,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 23% 1fr 1fr;
-    grid-auto-rows: 1fr .5fr .5fr;
+    grid-auto-rows: .8fr .1fr .5fr;
     grid-template-areas: "menu video video"
                          "menu description description"
                          "menu comments suggestions";
@@ -69,6 +69,7 @@ figure {
 }
 .video-image img {
     width: 100%;
+    height: 494px;
 }
 .icon-arrow-left2 {
     position: absolute;
@@ -78,6 +79,7 @@ figure {
     right: 0;
     left: 25px;
     bottom: 0;
+    height: 450px;
 }
 .icon-play2 {
     position: absolute;
@@ -90,16 +92,97 @@ figure {
     right: 0;
     left: 0;
     bottom: 0;
+    height: 494px;
 }
 
 .description {
-    /* grid-area: description; */
+    grid-area: description;
+    border-bottom: 3px solid #d0d0d0;
+    padding: 20px;
+    padding-top: 30px; 
+}
+.description-title {
+    color: #43475c;
+    font-size: 24px;
+}
+.description-title p {
+    margin: 0;
+}
+.description-views {
+    color: #b9b8b9;
+    font-size: 20px;
+}
+.description-views p {
+    margin-top: 0;
+}
+.description-options {
+    display: grid;
+    grid-template-columns: 15% 30% 50%;
+    grid-template-areas: "main-button icons genres";
+}
+.main-button {
+    grid-area: main-button;grid-area: main-button;
+    display: flex;
+    align-items: center;
+}
+.main-button button {
+    background: linear-gradient(to left,#db1178,#c90021);
+    font-size: 16px;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    padding: 10px;
+}
+.icons {
+    grid-area: icons;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #43475c;
+}
+.icon-share:before {
+    margin-left: 10px;
+}
+.icon-cloud-download:before {
+    margin-left: 20px;
+}
+.icons i {
+    margin-right: 50px;
+}
+.icons p {
+    margin: 0;
+}
+.genres {
+    grid-area: genres;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    margin: 0 10px;
+    border: 1px solid transparent;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 10px; 
+}
+.electronic {
+    background: #8d3cf4;
+}
+.roc {
+    background: #27fdbc;
+}
+.ochenta {
+    background: #c90021;
+}
+.rela {
+    background: #db1178;
 }
 
-.comments {
-    /* grid-area: comments; */
+
+/* .comments {
+    grid-area: comments;
 }
 
 .suggestions {
-    /* grid-area: suggestions; */
-}
+    grid-area: suggestions;
+} */
