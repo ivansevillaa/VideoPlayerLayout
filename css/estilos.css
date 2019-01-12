@@ -80,6 +80,7 @@ figure {
     left: 25px;
     bottom: 0;
     height: 450px;
+    z-index: 2;
 }
 .icon-play2 {
     position: absolute;
@@ -92,6 +93,17 @@ figure {
     right: 0;
     left: 0;
     bottom: 0;
+    height: 494px;
+    z-index: 3;
+}
+.overlay {
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
     height: 494px;
 }
 
@@ -142,9 +154,11 @@ figure {
 }
 .icon-share:before {
     margin-left: 10px;
+    font-size: 28px;
 }
 .icon-cloud-download:before {
     margin-left: 20px;
+    font-size: 32px;
 }
 .icons i {
     margin-right: 50px;
@@ -179,10 +193,41 @@ figure {
 }
 
 
-/* .comments {
+.comments {
     grid-area: comments;
+    padding: 10px 25px;
+}
+.comments-title p {
+    color: #43475c;
+    font-size: 18px;
+}
+.comment-form {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    border-bottom: 3px solid #d2d2d2;
+    border-top: 3px solid #d2d2d2;
+    border-radius: 3px;
+}
+.comment-form input {
+    color: #b9b8b9;
+    background: #d2d2d2;
+    font-size: 18px;
+    border: 1px solid transparent;
+}
+.form-image {
+    background: #d2d2d2;
+}
+.form-image img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+}
+.comment-user {
+    color: #858388;
 }
 
-.suggestions {
+/* .suggestions {
     grid-area: suggestions;
 } */
