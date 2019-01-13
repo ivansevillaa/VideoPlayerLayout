@@ -272,7 +272,27 @@ figure {
 }
 
 @media screen and (max-width: 767px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "menu menu"
+                             "video video"
+                             "description description"
+                             "comments suggestions";
+    }
+
+    .menu {
+        padding: 25px 20px;
+    }
+    .menu-playlist, .menu-friendsPlaylist {
+        display: none;
+    }
+    .menu-title h1, .menu-title span {
+        margin: 0;
+    }
     
+    .comment-user {
+        font-size: .9em;
+    }
 }
 
 @media screen and (max-width: 480px) {
