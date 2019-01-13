@@ -296,7 +296,33 @@ figure {
 }
 
 @media screen and (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "menu menu"
+                             "video video"
+                             "description description"
+                             "suggestions suggestions"
+                             "comments comments";
+    }
+
+    .menu {
+        padding: 1em;
+    }
+
+    .video-image img, .icon-arrow-left2,  .icon-play2, .overlay {
+        height: 250px;
+    }
+    .icon-arrow-left2 {
+        font-size: 2em;
+    }
+    .icon-play2 {
+        font-size: 3em;
+    }
     
+    .suggestions-title p {
+        margin-left: 0;
+        padding-left: 40px;
+    }
 }
 
 @media screen and (max-width: 320px) {
