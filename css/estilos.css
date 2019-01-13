@@ -325,7 +325,7 @@ figure {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 434px) {
     .description-options {
         grid-template-columns: 1fr;
         grid-template-areas: "main-button" 
