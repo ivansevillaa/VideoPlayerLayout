@@ -251,3 +251,34 @@ figure {
     margin-top: 3px;
     margin-bottom: 25px;
 }
+
+@media screen and (max-width: 1023px) {
+    .description-options {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "main-button icons" 
+                             "genres genres";
+        grid-gap: 1em;
+    }
+    .main-button {
+        display: grid;
+        justify-items: end;
+    }
+    .icons {
+        justify-content: start;
+    }
+    .icons i {
+        margin-right: 2em;
+    } 
+}
+
+@media screen and (max-width: 767px) {
+    
+}
+
+@media screen and (max-width: 480px) {
+    
+}
+
+@media screen and (max-width: 320px) {
+    
+}
