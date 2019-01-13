@@ -297,12 +297,12 @@ figure {
 
 @media screen and (max-width: 480px) {
     .container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "menu menu"
-                             "video video"
-                             "description description"
-                             "suggestions suggestions"
-                             "comments comments";
+        grid-template-columns: 1fr;
+        grid-template-areas: "menu"
+                             "video"
+                             "description"
+                             "suggestions"
+                             "comments";
     }
 
     .menu {
@@ -318,7 +318,7 @@ figure {
     .icon-play2 {
         font-size: 3em;
     }
-    
+
     .suggestions-title p {
         margin-left: 0;
         padding-left: 40px;
@@ -326,5 +326,19 @@ figure {
 }
 
 @media screen and (max-width: 320px) {
-    
+    .description-options {
+        grid-template-columns: 1fr;
+        grid-template-areas: "main-button" 
+                             "icons";
+        grid-gap: 1em;
+    }
+    .main-button {
+        justify-items: initial;
+    }
+    .icons {
+        justify-content: center;
+    }
+    .genres {
+        display: none;
+    }
 }
